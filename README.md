@@ -1,7 +1,7 @@
 
 # GuardianAD: Active Directory Password Security Auditor Tool
 
-A powerful forensic tool designed to analyze password security in Active Directory environments. GuardianAD leverages Hashcat results and NTDS.dit extracts to identify weak credentials, detect password reuse patterns, and uncover potential attack vectors.
+A tool designed to analyze password security in Active Directory environments. GuardianAD leverages Hashcat results and NTDS.dit extracts to identify weak credentials, detect password reuse patterns, and uncover potential attack vectors.
 
 ## Key Features
 - **Hashcat Integration**: Analyzes `hashcat` output containing cracked NTLM hashes and username (`--show --username`)
