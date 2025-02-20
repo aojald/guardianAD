@@ -260,7 +260,7 @@ def create_html_table(results, stats, args, similar_passwords, hash_usage):
                 </div>
                 <div class="stat-card">
                     <h3>Cracked Accounts</h3>
-                    <p>{stats['cracked_accounts']} ({stats['cracked_accounts']/stats['total_accounts']*100:.1f}%)</p>
+                    <p>{stats['cracked_accounts']} ({stats['cracked_accounts']/(stats['total_accounts'] if stats['total_accounts'] != 0 else 1)*100:.1f}%)</p>
                 </div>
                 <div class="stat-card">
                     <h3>Enabled Users</h3>
