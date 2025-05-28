@@ -26,7 +26,7 @@ pip install prettytable openpyxl
 ```
 
 ## Data Preparation Steps
-1. **Extract NTDS.dit** using Impacket:
+1. **Extract NTDS.dit** using Impacket: (note : errors when adding -pwd-last-set, parser will not identify "enabled" accounts, and div/0 when generating output).
    ```bash
    secretsdump.py -ntds ntds.dit -system SYSTEM LOCAL -just-dc-ntlm -user-status -history -outputfile ntds_extract
    ```
